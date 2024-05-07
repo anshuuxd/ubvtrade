@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-63HD5JLYR9"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-63HD5JLYR9');
+  </script>
+
+      <!-- Google tag (gtag.js) -->
+  <script data-cfasync="false">
+    window.ramp = window.ramp || {};
+    window.ramp.que = window.ramp.que || [];
+  </script>
+  <script data-cfasync="false" async src="https://cdn.intergient.com/1025206/74829/ramp_config.js"></script>
+  <script data-cfasync="false">
+      window._pwGA4PageviewId = ''.concat(Date.now());
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = window.gtag || function () {
+        dataLayer.push(arguments);
+      };
+      gtag('js', new Date());
+      gtag('config', 'G-FQWJ6EJBJ6', { 'send_page_view': false });
+      gtag(
+        'event',
+        'ramp_js',
+        {
+          'send_to': 'G-FQWJ6EJBJ6',
+          'pageview_id': window._pwGA4PageviewId
+        }
+      );
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Check if trades are fair in Roblox Basketball-legends by using our value calculator">
+  <meta property="og:image" content="https://i.ibb.co/Tg660ZH/ultimate-baller-value-1-removebg-preview-1-1.png" />
+  <title>Value Calculator</title>
+  <link rel="icon" type="image/x-icon" href=https://i.ibb.co/Tg660ZH/ultimate-baller-value-1-removebg-preview-1-1.png">
+  <style id="theme-style"></style>
+  <link rel="stylesheet" href="/calculator/main.css">
+    
+
+</head>
+<body>
+
+<div style="height: 15vh;"></div>
+
+
+     </div>
+
+
+        <div class="sideoverlay" id="sideoverlay"></div>
+        <div class="sidepopup" id="sidepopup">
+        <nav id="siteredirect">
+            <!-- Content of your popup goes here -->
+              <li id="siteoverview">
+                <button id="closeButton" class="close-button">
+                  <img class="close-icon" src="close button.png"></img>
+                  <span class="close-text">Close</span>
+                </button>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="ValueCalculator.html">Pet value calculator</a>
+                    <a href="FAQ.html"> Help</a>
+                  </nav>
+              </li>
+              
+              <li id="otherlinks">
+                <a href="https://www.youtube.com/@Elvebredd/featured">YouTube</a>
+                <a href="https://discord.gg/Byny894ZQP">Discord</a>
+                <a href="https://www.tiktok.com/discover/elvebred">TikTok</a>
+                <a href="https://www.roblox.com/groups/7838569/Elvebred#!/about">Roblox Group</a>
+                <a href="https://www.roblox.com/users/323218394/profile">Roblox Profile</a>
+              </li>
+          </nav>
+    </div>
+
+    </script>
+
+    <div class="modal" id="modal">
+        <div class="modal-body" > 
+            <button class="close-button2" id="close-button2" onclick="closeModal(modal)"></button>
+            <!---<img src="close button.png" alt="close button" class="modal-close"/> --->
+
+            <div class="search-container">
+                <form class="form">
+                    <input id="petSearch" type="text" class="input" onkeyup= "searchFunction()"placeholder="Search"/>
+                    <img src="https://elvebredd.com/search-icon.png" alt="Search" class="search-icon"/>
+                </form>
+            </div>
+
+                <div class="results-container"></div>
+                <!---<button data-close-button class="close-button">&times;</button> --->
+
+
+                <button class="filter-button" id="show-filter-list">
+                    <img src="https://elvebredd.com/menu icon.svg" class="button-filter-image"></img>
+                    <span class="button-filter-menu">Filters</span>
+                </button>
+                <ul class="selecter" id="modalfilterbuttons" onclick="setSelctedFilterbuttons(event)">
+                    <li class="button-like selected" onclick="setFilterType('')">All</li>
+                    <li class="button-like" onclick="setFilterType('Effects')">Effects</li>
+                    <li class="button-like under-pet" onclick="setFilterRarity('Skins')">Skins</li> 
+                    <li class="button-like under-pet" onclick="setFilterRarity('legendary')">Legendary</li> 
+                    <li class="button-like under-pet" onclick="setFilterRarity('ultra rare')">Ultra rare</li> 
+                    <li class="button-like under-pet" onclick="setFilterRarity('rare')">Rare</li>
+                    <li class="button-like under-pet" onclick="setFilterRarity('uncommon')">Uncommon</li> 
+                    <li class="button-like under-pet" onclick="setFilterRarity('common')">Common</li> 
+                    <li class="button-like" onclick="setFilterType('Skins')">Skins</li>  
+                    <li class="button-like" onclick="setFilterType('banner')">Banners</li>                  
+                    <li class="button-like" id ='Favorites' onclick="PetListNormal()">Favorites</li>
+                    <li class="button-like" onclick="setFilterType('other')">Other</li>    
+                </ul>
+                
+                
+            <u1 class="selecter2">
+                <u1 id="mount">
+                    <li>
+                    <input type="checkbox" id="fly" value="f" name="fly">
+                    
+                    </li>
+                    <li>
+                    <input type="checkbox" id="ride" value="r" name="ride">
+                   
+                    </li>
+                </u1>
+                <u1 id="unique">
+                    <li>
+                        <input type="radio" id="regular" value="d" name="mega/neon" checked="checked">
+                        <label for="regular">ubv</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="neon" value="n" name="mega/neon">
+                      
+                        </li>
+                    <li>
+                        <input type="radio" id="mega" value="m" name="mega/neon">
+                       
+                    </li>
+                </u1>
+            </u1>
+
+            <ul id="petList">
+                <ul id="favoritebuttonfull" style="position: relative; display: none;">
+                    <img src="https://i.ibb.co/swRkND1/pngwing-com.png" id="idk">
+                    <img src="https://i.ibb.co/swRkND1/pngwing-com.png" alt="addfavoritebutton" id='addfavoritebutton' style=" display: none;">
+
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+
+        <header id="headerbak"></header>
+        <header id="headerfront">
+
+                    <li id="navnlogo" class="contentthing">
+                        <a href="/index.html"><img src="https://i.ibb.co/Tg660ZH/ultimate-baller-value-1-removebg-preview-1-1.png" alt="Elvebredd home button" id="toplogo"></a>
+                    </li>
+
+                   
+
+
+
+        </header>
+    
+        <!--  [Mobile]leaderboard_atf -->
+        <div data-pw-mobi="leaderboard_atf" id="pwMobiLbAtf"></div>
+        <script type="text/javascript">
+        window.ramp.que.push(function () {
+            window.ramp.addTag("pwMobiLbAtf");
+        })
+        </script>
+
+
+
+    <section class="features" id="tradelayout">
+
+       
+
+
+
+    <section id="main" aria-label="Value Calculator For BL">
+    
+        <div class="set" id="main1">
+            <div class="pets-container" id="set1-container"></div>
+            
+        </div>
+
+        <div class="mid">
+            <p> </p>
+          <p id="comparison-result"></p>
+
+        </div>
+
+        <div class="set" id="main2">
+            <div class="pets-container" id="set2-container"></div>
+
+        </div>
+
+        <div id="sharkforst">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" id="sharkB" onclick="sharkClick()">ubv value list</button>
+            </div>
+        </div>
+
+
+    </section>
+<!--
+        <figure id="bar">
+            <a href="http://www.catsthatlooklikehitler.com/cgi-bin/seigmiaow.pl?8849"><img src="lightdark.png" alt="light/dark mod"></a>
+            <figcaption>
+                <h1><u>SIGN UP FOR A BETTER EXPERIENCE</u></h1>
+            </figcaption>
+        </figure>
+-->
+        <div id="topbar" aria-label="Value display to see if trades are fair">
+                <p id="din"> <span id="total-value-set1">0</span></p>
+                <p id="hens"> <span id="total-value-set2">0</span></p>
+                
+                <div id="wfl">
+                    <h1 id="Jobiden" >Win</h1>
+                    <h1 id="Xi">Fair</h1>
+                    <h1 id="Trump">Lose</h1>
+                </div>
+
+                <div id="comparisontext">
+                    <div id="YourOffer">Your Offer</div>
+                    <div id="TheGreatDevider">|</div>
+                    <div id="TheirOffer">Their Offer</div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-bar" id="color-progress"></div>
+                </div>
+            
+                </div>
+            </div>
+   
+            <!-- <div class="ad" id="ad2">
+                <a href="https://discord.gg/Byny894ZQP" target="_blank">
+                    <img src="discordad.png" alt="Do like 10,000+ others and join the Discord server" class="side">
+                </a>
+            </div>
+
+            <div class="ad" id="ad2horizontal">
+                <a href="https://discord.gg/Byny894ZQP" target="_blank">
+                    <img src="discordadhorizontal.png" alt="Do like 10,000+ others and join the Discord server" class="side">
+                </a>
+            </div> -->
+
+
+
+    </section>
+
+    <div id="informationtext"> Use this Value Calculator to know BL values. Just add items on each side of the trade to compare offers. the calculator gonna suggest win/fair/lose according to items you put in</div>
+
+
+
+    <footer id="foot">
+
+        <div id="empty-box1" style="display: none;"></div>
+        <div id="empty-box2" style="display: none;"></div>
+    
+    
+       
+        
+    
+        <div id="linksss">
+           
+            </a>
+            <a id="di" href="https://discord.gg/AR6tUNYV" target="_blank">
+                <img src="https://elvebredd.com/discord logo.png" alt="Discord server">
+            </a>
+            <a id="ro" href="https://www.roblox.com/groups/32333865/InfinitySports#!/about" target="_blank">
+                <img src="https://elvebredd.com/roblox logo.png" alt="Roblox server">
+            </a>
+        </div>
+    
+        <div id="linksss2">
+            <a href="">Help Center</a>
+            <a href="">Privacy Policy</a>
+            <a href="https://discord.gg/AR6tUNYV">Contact Us</a>
+        </div>
+        
+        <div id="subtext">
+            <p>There are no official values in BL and Infinitysports doesn’t own nor edit our list</p>
+        </div>
+    
+    
+    
+        <script data-cfasync="false" async src="https://cdn.intergient.com/ramp_core.js"></script>
+
+    </footer>
+    
+
+    <script src="/calculator/theme.js"></script>
+    <script src="https://elvebredd.com/scriptbasic.js"></script>    
+    <script src="/calculator/values.js"></script>
+    <script src="/calculator/scriptv3.js"></script>
+</body>
+</html>
+
+
